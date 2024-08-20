@@ -1,0 +1,53 @@
+body{
+    background-color: #000;
+}
+#box{
+    width: 250px;
+    height: 250px;
+    background-color: red;
+    font-size: 13em;
+    text-align: center;
+    animation-name: slideUp;
+    animation-duration: 1s;
+}
+img{
+    width: 250px;
+    height: 450px;
+    animation-name: shrek;
+    animation-duration: 7s;
+    animation-fill-mode: both;
+    /* animation-iteration-count: 2; */
+    animation-iteration-count: infinite;
+ 
+    animation-direction:alternate;
+    /* animation-timing-function: linear; */
+}
+
+@keyframes shrek{
+
+    0%{ transform: translateX(-300px);}
+
+    60%{transform: rotate(25deg);}
+    70%{transform: rotate(-25deg);}
+
+    76%{transform: scale(1);}
+    77%{transform: scale(5);}
+    100%{transform: translateX(1400px);}
+    
+}
+
+@keyframes slideLeft {
+    from{ transform: translateX(300%);}    
+}
+
+@keyframes slideRight {
+    to{ transform: translateX(300%);}   
+}
+
+@keyframes slideUp {
+    from{ transform: translateY(-300%); }
+}
+
+@keyframes slideDown {
+    to{ transform: translateY(300%);}   
+}
